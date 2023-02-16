@@ -1,7 +1,7 @@
 name: multi job build
 on: 
   push: 
-    branch: [ main ]
+    branches: [ main ]
 
 jobs:
   # first job
@@ -26,6 +26,7 @@ jobs:
         run : |
           echo Here is the windows ExecutionPolicy 
           Get-ExecutionPolicy
+
   # second job 
   build-on-ubuntu:
     runs-on: ubuntu-latest
