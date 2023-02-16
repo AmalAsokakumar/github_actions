@@ -49,3 +49,17 @@ jobs:
           mvn --version
           gradle --version
           ant -version 
+      - name: Runa a multi-line sript 
+        run:
+          echo Where is the android SDK root
+          echo $ANDROID_SDK_ROOT
+          echo 
+          echo @here are the Selenium jars? 
+          echo $SELENIUM_JAR_PATH
+          echo 
+          echo  Who is running  this script 
+          whoami
+          echo Wow is the disc laid out?
+          df 
+          echo What environment variables are  available? 
+          env 
