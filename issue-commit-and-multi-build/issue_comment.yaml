@@ -1,0 +1,60 @@
+on:
+  issue_comment:
+    types: [created]
+jobs:
+  commentCreated:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add reaction
+        uses: peter-evans/create-or-update-comment@v2
+        with:
+          comment-id: ${{ github.event.comment.id }}
+          reactions: eyes
+
+
+
+
+
+
+# name: create a comment on new issue 
+
+# on: 
+#   issues: 
+#     type: [opened]
+ 
+# jobs: 
+#   comment-with-action: 
+#     runs-on: ubuntu-latest
+#     steps: 
+#       - name: "dump github context"
+#         run: echo '${{ toJSON(github.event) }}' | jq
+#         shell: bash
+        
+#       - name: Create comment
+#         uses: peter-evans/create-or-update-comment@v2
+#         with:
+#           issue-number: ${{ github.event.issue.number }}
+#           body: |
+#             This is a multi-line test comment
+#             - With GitHub **Markdown** :sparkles:
+#             - Created by [create-or-update-comment][1]
+
+#             [1]: https://github.com/peter-evans/create-or-update-comment
+#           reactions: '+1'
+          
+          
+          
+          
+          
+          
+#       - name: Create Comment
+#         uses: peter-evans/create-or-update-comment@v2
+#         with: 
+#           issue-number: ${{ github.event.issue.number }}
+#           body: |
+#             This is a multi-line teest comment
+#             - With GitHub **Markdown** :sparkles: 
+#             - Created by [create-or-update-comment][1]
+            
+#             [1]: https://github.com/peter-evans/create-or-update-comment
+#           reactions: '+1'

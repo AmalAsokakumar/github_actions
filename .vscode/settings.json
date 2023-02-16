@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///Users/amalasokakumar/.vscode/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i",
+        "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json": "file:///Users/amalasokakumar/Documents/githubActions/github_actions/first/main.yml"
+    }
+}
